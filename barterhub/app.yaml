@@ -1,0 +1,19 @@
+application: barterhub
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+
+-   url: /?
+    script: client_server.py
+
+-   url: /async/.*
+    script: async_server.py
+    
+-   url: /admin/.*
+    script: admin_request_handler.py
+    login: admin
+    
+
+

@@ -1,0 +1,21 @@
+def i18n():
+    return {'ERR_HEADER' : 'An error occured while loading BarterHub',
+        'ERR_COOKIES_NOT_ENABLED' : 'Cookies must be enabled',
+        'ERR_JAVASCRIPT_NOT_ENABLED' : 'Javascript must be enabled',
+        'ERR_INIT_FAILED' : 'Failed to initialize the application',
+        'ERR_SESSION_REQUEST_FAILED' : 'Session request failed',
+        'LBL_BROWSING_GOODS_OFFERED' : 'Browsing goods offered',
+        'LBL_LOGGED_IN_AS' : 'Logged in as',
+        'LBL_NOT_LOGGED_IN' : 'Not logged in',
+        'LBL_EMAIL_ADDRESS' : 'E-Mail Address',
+        'LBL_PASSWORD' : 'Password',
+        'LBL_LOG_IN' : 'Log in',
+        'LBL_SERVICES_OFFERED' : 'Services Offered',
+        'LBL_SERVICES_REQUESTED' : 'Services Offered',
+        'LBL_GOODS_OFFERED' : 'Goods Offered',
+        'LBL_GOODS_REQUESTED' : 'Goods Requested',
+        'LBL_BROWSE' : 'Browse',
+        'LBL_LOGIN_TO_BARTERHUB' : 'Login to BarterHub',
+        'LBL_LOADING' : 'Loading...',
+        'LBL_LOGGING_IN' : 'Logging in...'}
+

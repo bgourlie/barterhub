@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org" />
+<title>BarterHub &raquo; Welcome to BarterHub!</title>
+<style type="text/css">
+<!-- {% include "js_css/screen.css" %} -->
+</style>
+
+<script type="text/javascript">
+{% include "js_css/md5.js" %}
+{% include "js_css/dlite.js" %}
+{% include 'js_css/bh00_const.js' %}
+{% include 'js_css/bh01_i18n.js' %}
+{% include 'js_css/bh02_globals.js' %}
+{% include "js_css/bh03_ui_lib.js" %}
+{% include "js_css/bh04_async_lib.js" %}
+{% include 'js_css/bh05_ui_discover.js' %}
+{% include 'js_css/bh06_ui_attach.js' %} 
+{% include "js_css/bh07_app_init.js" %}
+</script>
+</head>
+<body>
+<div id="page_header">
+<ul>
+<li><h1>BarterHub.us</h1></li>
+
+<li><a href="#">About</a></li>
+
+<li><a href="#">Contact</a></li>
+
+<li id="login_status"></li>
+</ul>
+</div>
+
+<div id="loading">
+    <div id="javascript_enabled">
+        <h1>{{i18n.LBL_LOADING}}</h1>
+    </div>
+    
+    <span id="javascript_disabled" class='loading_error'>
+        <h2><noscript>{{i18n.ERR_HEADER}}</noscript></h2>
+        <h3><noscript>{{i18n.ERR_JAVASCRIPT_NOT_ENABLED}}</noscript></h3>
+    </span>
+</div>
+
+<!-- BEGIN CONTENT -->
+<div style="display:none;" id="content">
+<div id="slot_top_left" class="slot" style="float:left;width:30%">
+{% include "parts/browse.part.html" %}
+</div>
+
+<div id="slot_middle" class="slot" style="float:left;width:30%">
+{% include "parts/search.part.html" %}
+</div>
+
+<div id="slot_right" class="slot" style="float:left;width:30%">
+{% include "parts/options.part.html" %} 
+{% include "parts/login_or_signup.part.html" %}
+{% include "parts/login.part.html" %}
+</div>
+
+<br clear="all" />
+ 
+
+<div id="slot_bottom_left" class="slot" style="width:100%">
+{% include "parts/category_navigator.part.html" %}
+</div>
+
+<div id="slot_bottom_right" class="slot" style="width:100%">
+{% include "parts/listing_navigator.part.html" %}
+</div>
+</div>
+
+<!-- END CONTENT -->
+</body>
+</html>
+
+

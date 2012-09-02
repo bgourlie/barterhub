@@ -1,0 +1,8 @@
+////////////i18n////////////
+var ERR_COOKIES_NOT_ENABLED = '{{i18n.ERR_COOKIES_NOT_ENABLED}}';
+var ERR_HEADER = '{{i18n.ERR_HEADER}}';
+var ERR_INIT_FAILED = '{{i18n.ERR_INIT_FAILED}}';
+var LBL_NOT_LOGGED_IN = '{{i18n.LBL_NOT_LOGGED_IN}}';
+var LBL_LOGGED_IN_AS = '{{i18n.LBL_LOGGED_IN_AS}}&nbsp;';
+var LBL_LOGGING_IN = '{{i18n.LBL_LOGGING_IN}}';
+var LBL_LOG_IN = '{{i18n.LBL_LOG_IN}}';

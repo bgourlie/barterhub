@@ -1,0 +1,22 @@
+{% extends "master_layout.html" %}
+
+{% block content %}
+<p>Welcome to the admin console!</p>
+Viewing <a href="./">Root</a>{% if current_category %}&nbsp;&gt;&gt;{% endif %}
+{% for category in lineage %}
+    <a href="./?category={{category.key}}">{{category.name}}</a> &gt;&gt;
+{% endfor %}
+ {{ current_category.name }}
+<h3>Sub Categories</h3>
+<ul>
+{% for category in child_categories %}
+<li><a href="./?category={{category.key}}">{{category.name}}</a></li>
+{% endfor %}
+</ul>
+
+<form method="post" action="./">
+<input type="text" name="category_name" /><input type="submit" value="Create Category Here" />
+<input type="hidden" name="parent_key" value="{{current_category.key}}" />
+</form>
+{% endblock %}
+
